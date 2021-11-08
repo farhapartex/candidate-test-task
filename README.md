@@ -21,13 +21,11 @@ The `CSVParser` class takes a path to a csv file as input.
 - You must be able to parse all existing transactions in the the two different example files.
 - The `CSVParser` class must be used for printing the results as already written in `main.py`. Aside from that you may design and structure other functions, classes or data structures exactly how you see fit and think is best. Your design choices are at the core of how we evaluate your test.
 
-### Expected output
+### Expected output backend
 To store a transaction in the database the output needs to be in json as below. For each transaction 
-that is parsed, the expected output should be as the below for each of the transactin types. You may show the results simply by printing it
-using the `print_results()` method in the `CSVParser` class found in `main.py`. Note that there are three different transaction types and how they differ in their output format is shown below.
+that is parsed, the expected output should be in json as the below for each of the transactin types. You may show the results by returning a JSON object in a method called `get_json_results()` in the `CSVParser` class found in `main.py`. Note that there are three different transaction types and how they differ in their output format is shown below.
 
-
-#### Example output:
+#### Example output from backend
 
 **Trade**:
 
@@ -71,6 +69,12 @@ using the `print_results()` method in the `CSVParser` class found in `main.py`. 
 
 ```
 
+
+### Front-end task 
+- Build a component using VueJS displaying the transactions with all their information that is returned by `get_json_results()`
+- You may use any tool or Vue component library to desing and style it.
+
+
 #### Transaction types
 
 `transaction_type` is a text string and must be one of these three in the output:
@@ -81,11 +85,19 @@ using the `print_results()` method in the `CSVParser` class found in `main.py`. 
 
 
 ### What we asses in your code test:
+
+#### Backend
  - How well your chosen design the parser for scale
  - How easy the design and code is to understand
  - How well the design works if we would like to add more files in the future.
  - How well you understand how transactions should be interpreted without explicit instructions on what the file lists (as it will be in the real world.)
  - How Pythonic the code style is (not super important)
+
+
+#### Front-end
+- We're interested in seeing how you would choose to display the transaction information and how you choose to make it look good and readable to the user.
+- The chosen structure of the component, and potential sub components will be assessed.
+- Overall UI design thinking and skills is taken into consideration.
 
  Good luck!
  
