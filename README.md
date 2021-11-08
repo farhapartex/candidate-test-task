@@ -23,7 +23,7 @@ The `CSVParser` class takes a path to a csv file as input.
 
 ### Expected output backend
 To store a transaction in the database the output needs to be in json as below. For each transaction 
-that is parsed, the expected output should be in json as the below for each of the transactin types. You may show the results by returning a JSON object in a method called `get_json_results()` in the `CSVParser` class found in `main.py`. Note that there are three different transaction types and how they differ in their output format is shown below.
+that is parsed, the expected output should be in json as the below for each of the transactin types. You may show the results by returning a list of JSON objects in a method called `get_json_results()` in the `CSVParser` class found in `main.py`. Note that there are three different transaction types and how they differ in their output format is shown below.
 
 #### Example output from backend
 
